@@ -1,7 +1,6 @@
-package com.saucecode6.openapiapp
+package com.saucecode6.openapiapp.presentation.details
 
 import android.content.Intent
-import android.net.Uri
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
@@ -9,8 +8,6 @@ import androidx.compose.ui.test.performClick
 import androidx.test.core.app.ApplicationProvider
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.domain.model.Source
-import com.saucecode6.openapiapp.presentation.details.DetailsEvent
-import com.saucecode6.openapiapp.presentation.details.DetailsScreen
 import org.junit.Rule
 import org.junit.Test
 
