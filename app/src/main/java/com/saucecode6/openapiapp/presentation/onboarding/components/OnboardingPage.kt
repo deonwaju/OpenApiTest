@@ -18,8 +18,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.sauceCode6.openapiapp.R
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding2
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding2
 import com.saucecode6.openapiapp.presentation.onboarding.Page
 import com.saucecode6.openapiapp.presentation.onboarding.pages
 import com.saucecode6.openapiapp.theme.NewsAppTheme

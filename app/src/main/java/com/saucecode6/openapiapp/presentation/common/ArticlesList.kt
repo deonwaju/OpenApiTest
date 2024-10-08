@@ -12,8 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
 import com.saucecode6.openapiapp.domain.model.Article
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.ExtraSmallPadding2
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens.ExtraSmallPadding2
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
 
 @Composable
 fun ArticlesList(
@@ -48,9 +48,8 @@ fun ArticlesList(
         verticalArrangement = Arrangement.spacedBy(MediumPadding1),
         contentPadding = PaddingValues(all = ExtraSmallPadding2)
     ) {
-        items(count = articles.size) {
-            val articles = articles[it]
-            articles.let { article ->
+        items(articles.size) { index ->
+            articles[index].let { article ->
                 ArticleCard(article = article, onClick = { onClick(article) })
             }
         }

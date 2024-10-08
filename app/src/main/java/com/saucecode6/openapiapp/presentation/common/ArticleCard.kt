@@ -30,9 +30,9 @@ import coil.request.ImageRequest
 import com.sauceCode6.openapiapp.R
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.domain.model.Source
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.ArticleCardSize
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.ExtraSmallPadding
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.SmallIconSize
+import com.saucecode6.openapiapp.util.Dimens.ArticleCardSize
+import com.saucecode6.openapiapp.util.Dimens.ExtraSmallPadding
+import com.saucecode6.openapiapp.util.Dimens.SmallIconSize
 import com.saucecode6.openapiapp.theme.NewsAppTheme
 
 @Composable

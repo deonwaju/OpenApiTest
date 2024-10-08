@@ -28,7 +28,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.sauceCode6.openapiapp.R
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.IconSize
+import com.saucecode6.openapiapp.util.Dimens.IconSize
 import com.saucecode6.openapiapp.theme.NewsAppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)

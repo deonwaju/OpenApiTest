@@ -20,8 +20,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.saucecode6.openapiapp.presentation.common.NewsButton
 import com.saucecode6.openapiapp.presentation.common.NewsTextButton
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding2
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.PageIndicatorWidth
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding2
+import com.saucecode6.openapiapp.util.Dimens.PageIndicatorWidth
 import com.saucecode6.openapiapp.presentation.onboarding.components.OnboardingPage
 import com.saucecode6.openapiapp.presentation.onboarding.components.PageIndicator
 import kotlinx.coroutines.launch

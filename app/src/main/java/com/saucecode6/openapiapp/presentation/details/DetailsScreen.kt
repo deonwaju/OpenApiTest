@@ -26,8 +26,8 @@ import com.sauceCode6.openapiapp.R
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.domain.model.Source
 import com.saucecode6.openapiapp.presentation.details.components.DetailsTopBar
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.ArticleImageHeight
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens.ArticleImageHeight
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
 import com.saucecode6.openapiapp.theme.NewsAppTheme
 
 @Composable

@@ -24,8 +24,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import com.sauceCode6.openapiapp.R
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
 
 
 @SuppressLint("ModifierFactoryUnreferencedReceiver")

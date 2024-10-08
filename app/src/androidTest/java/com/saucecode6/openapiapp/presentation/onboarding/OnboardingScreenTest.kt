@@ -1,10 +1,8 @@
-package com.saucecode6.openapiapp
+package com.saucecode6.openapiapp.presentation.onboarding
 
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import com.saucecode6.openapiapp.presentation.onboarding.OnboardingEvent
-import com.saucecode6.openapiapp.presentation.onboarding.OnboardingScreen
 import org.junit.Rule
 import org.junit.Test
 

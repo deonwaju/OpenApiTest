@@ -1,4 +1,4 @@
-package com.saucecode6.openapiapp.presentation.onboarding
+package com.saucecode6.openapiapp.util
 
 import androidx.compose.ui.unit.dp
 

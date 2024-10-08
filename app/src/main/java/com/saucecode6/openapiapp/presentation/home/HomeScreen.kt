@@ -1,6 +1,5 @@
 package com.saucecode6.openapiapp.presentation.home
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.layout.Column
@@ -26,11 +25,10 @@ import com.sauceCode6.openapiapp.R
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.presentation.common.ArticlesList
 import com.saucecode6.openapiapp.presentation.common.SearchBar
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.LargePadding
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding2
+import com.saucecode6.openapiapp.util.Dimens.LargePadding
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding2
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HomeScreen(
     articles: LazyPagingItems<Article>,

@@ -12,7 +12,7 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.presentation.common.ArticlesList
 import com.saucecode6.openapiapp.presentation.common.SearchBar
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
 
 @Composable
 fun SearchScreen(

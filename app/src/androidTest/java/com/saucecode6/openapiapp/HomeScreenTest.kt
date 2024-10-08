@@ -29,7 +29,7 @@ class HomeScreenTest {
         urlToImage = "imageUrl1"
     )
 
-    val articles: LazyPagingItems<Article> = mockLazyPagingItems(listOf(article))
+    private val articles: LazyPagingItems<Article> = mockLazyPagingItems(listOf(article))
 
     @Test
     fun homeScreen_displaysSearchBar() {
@@ -96,7 +96,6 @@ class HomeScreenTest {
             )
         }
 
-        // Check if article details are displayed
         composeTestRule.onNodeWithText("Title 1").assertExists()
         composeTestRule.onNodeWithText("Source 1").assertExists()
         composeTestRule.onNodeWithText("2024-01-01").assertExists()
@@ -126,7 +125,6 @@ class HomeScreenTest {
         }
 
         composeTestRule.onNodeWithTag("SearchBar Tag").performClick()
-
         assert(searchClicked)
     }
 

@@ -19,8 +19,8 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.sauceCode6.openapiapp.R
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.ExtraSmallPadding2
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.IconSize
+import com.saucecode6.openapiapp.util.Dimens.ExtraSmallPadding2
+import com.saucecode6.openapiapp.util.Dimens.IconSize
 
 @Composable
 fun NewsBottomNavigation(
@@ -41,7 +41,7 @@ fun NewsBottomNavigation(
                     Column(horizontalAlignment = CenterHorizontally) {
                         Icon(
                             painter = painterResource(id = item.icon), 
-                            contentDescription = null,
+                            contentDescription = item.description,
                             modifier = Modifier.size(IconSize)
                             )
                         Spacer(modifier = Modifier.height(ExtraSmallPadding2))
@@ -63,4 +63,5 @@ fun NewsBottomNavigation(
 data class BottomNavigationItem(
     @DrawableRes val icon: Int,
     val text: String,
+    val description: String,
 )

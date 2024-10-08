@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.IndicatorSize
+import com.saucecode6.openapiapp.util.Dimens.IndicatorSize
 import com.saucecode6.openapiapp.theme.BlueGray
 
 @Composable

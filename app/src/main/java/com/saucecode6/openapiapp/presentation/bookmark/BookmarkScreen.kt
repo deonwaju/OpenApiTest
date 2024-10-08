@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import com.sauceCode6.openapiapp.R
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.presentation.common.ArticlesList
-import com.saucecode6.openapiapp.presentation.onboarding.Dimens.MediumPadding1
+import com.saucecode6.openapiapp.util.Dimens.MediumPadding1
 
 @Composable
 fun BookmarkScreen(

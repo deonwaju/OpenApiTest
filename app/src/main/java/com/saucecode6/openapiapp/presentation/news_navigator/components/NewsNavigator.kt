@@ -39,9 +39,9 @@ import com.saucecode6.openapiapp.presentation.search.SearchViewModel
 fun NewsNavigator() {
     val bottomNavigationItem = remember {
         listOf(
-            BottomNavigationItem(icon = R.drawable.ic_home, text = "Home"),
-            BottomNavigationItem(icon = R.drawable.ic_search, text = "Search"),
-            BottomNavigationItem(icon = R.drawable.ic_bookmark, text = "BookMark"),
+            BottomNavigationItem(icon = R.drawable.ic_home, text = "Home", "Home Button"),
+            BottomNavigationItem(icon = R.drawable.ic_search, text = "Search", "Search Button"),
+            BottomNavigationItem(icon = R.drawable.ic_bookmark, text = "BookMark", "BookMark Button"),
         )
     }
 
@@ -96,7 +96,7 @@ fun NewsNavigator() {
             startDestination = Route.HomeScreen.route,
             modifier = Modifier.padding(bottom = bottomPadding)
         ) {
-            composable(route = Route.HomeScreen.route) { backStackEntry ->
+            composable(route = Route.HomeScreen.route) { _ ->
                 val viewModel: HomeViewModel = hiltViewModel()
                 val articles = viewModel.news.collectAsLazyPagingItems()
                 HomeScreen(
@@ -176,8 +176,8 @@ fun OnBackClickStateSaver(navController: NavController) {
 
 private fun navigateToTab(navController: NavController, route: String) {
     navController.navigate(route) {
-        navController.graph.startDestinationRoute?.let { screen_route ->
-            popUpTo(screen_route) {
+        navController.graph.startDestinationRoute?.let { screenRoute ->
+            popUpTo(screenRoute) {
                 saveState = true
             }
         }
