@@ -22,6 +22,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.ImeAction
@@ -56,6 +57,7 @@ fun SearchBar(
         TextField(
             modifier = Modifier
                 .fillMaxWidth()
+                .testTag("Search Bar")
                 .searchBar(),
             value = text,
             onValueChange = onValueChange,

@@ -67,7 +67,8 @@ fun ArticleCard(
                 style = MaterialTheme.typography.bodyMedium.copy(),
                 color = colorResource(id = R.color.text_title),
                 maxLines = 2,
-                overflow = TextOverflow.Ellipsis
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.testTag("Title Tag")
             )
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(

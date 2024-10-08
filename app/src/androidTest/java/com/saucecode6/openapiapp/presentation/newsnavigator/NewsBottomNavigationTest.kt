@@ -1,4 +1,4 @@
-package com.saucecode6.openapiapp
+package com.saucecode6.openapiapp.presentation.newsnavigator
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule

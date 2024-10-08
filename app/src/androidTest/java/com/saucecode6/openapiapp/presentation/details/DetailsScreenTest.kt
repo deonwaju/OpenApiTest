@@ -33,7 +33,6 @@ class DetailsScreenTest {
             DetailsScreen(article = mockArticle, event = {}, navigateUp = {})
         }
 
-        // Verify that the title, content, and image are displayed
         composeTestRule.onNodeWithText("Test Article Title").assertExists()
         composeTestRule.onNodeWithText("Test content").assertExists()
     }
