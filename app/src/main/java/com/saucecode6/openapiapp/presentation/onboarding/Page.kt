@@ -11,18 +11,18 @@ data class Page(
 
 val pages = listOf(
     Page(
-        title = "Lorem Ipsum is simply dummy",
+        title = "Welcome to Sauce News",
         desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image = R.drawable.onboarding1
+        image = R.drawable.ic_skyline
     ),
     Page(
-        title = "Lorem Ipsum is simply dummy",
+        title = "Get Free News Updates",
         desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image = R.drawable.onboarding2
+        image = R.drawable.ic_skyline
     ),
     Page(
-        title = "Lorem Ipsum is simply dummy",
+        title = "All In The Palm Of Your Hand",
         desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image = R.drawable.onboarding3
+        image = R.drawable.ic_skyline
     )
 )

@@ -28,6 +28,8 @@ navigationCompose = "1.2.0"
 coreKtxVersion = "1.6.1"
 junitKtx = "1.2.1"
 pagingRuntimeKtx = "3.3.2"
+uiTestJunit4Android = "1.7.3"
+robolectric = "4.12"
 
 [libraries]
 accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
@@ -67,6 +69,8 @@ hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", ve
 core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxVersion" }
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 androidx-paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "pagingRuntimeKtx" }
+androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

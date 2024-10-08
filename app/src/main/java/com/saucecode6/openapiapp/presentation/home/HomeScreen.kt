@@ -17,6 +17,7 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
@@ -65,7 +66,9 @@ fun HomeScreen(
         SearchBar(
             modifier = Modifier
                 .padding(horizontal = MediumPadding1)
-                .fillMaxWidth(),
+                .fillMaxWidth()
+                .testTag("SearchBar Tag")
+            ,
             text = "",
             readOnly = true,
             onValueChange = {},
@@ -79,7 +82,7 @@ fun HomeScreen(
             text = titles,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(start = MediumPadding1)
+                .padding(horizontal = MediumPadding1)
                 .basicMarquee(),
             fontSize = 12.sp,
             color = colorResource(id = R.color.placeholder)

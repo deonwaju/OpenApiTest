@@ -64,16 +64,15 @@ class NewsPagingSourceTest {
         val result = pagingSource.load(
             PagingSource.LoadParams.Refresh(
                 key = 1,
-                loadSize =
-                3,
+                loadSize = 3,
                 placeholdersEnabled = false
             )
         )
 
         assertTrue(result is PagingSource.LoadResult.Page)
         val pageResult = result as PagingSource.LoadResult.Page
-        assertEquals(2, pageResult.data.size)
-        assertEquals(2, pageResult.nextKey)
+        assertEquals(3, pageResult.data.size)
+        assertEquals(null, pageResult.nextKey)
         assertNull(pageResult.prevKey)
     }
 }

@@ -39,7 +39,7 @@ fun DetailsTopBar(
             IconButton(onClick = onBackClick) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_back_arrow),
-                    contentDescription = null
+                    contentDescription = "Back"
                 )
             }
         },
@@ -47,19 +47,19 @@ fun DetailsTopBar(
             IconButton(onClick = onBookMarkClick) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_bookmark),
-                    contentDescription = null
+                    contentDescription = "Bookmark"
                 )
             }
             IconButton(onClick = onShareClick) {
                 Icon(
                     imageVector = Icons.Default.Share,
-                    contentDescription = null
+                    contentDescription = "Share"
                 )
             }
             IconButton(onClick = onBrowsingClick) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_network),
-                    contentDescription = null
+                    contentDescription = "Browser"
                 )
             }
         }
