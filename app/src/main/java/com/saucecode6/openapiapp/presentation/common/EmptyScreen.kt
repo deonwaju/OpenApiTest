@@ -71,7 +71,7 @@ fun EmptyContent(alphaAnim: Float, message: String, iconId: Int) {
     ) {
         Icon(
             painter = painterResource(id = iconId),
-            contentDescription = null,
+            contentDescription = "Empty Screen Icon",
             tint = if (isSystemInDarkTheme()) LightGray else DarkGray,
             modifier = Modifier
                 .size(120.dp)

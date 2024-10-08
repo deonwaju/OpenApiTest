@@ -11,6 +11,8 @@ android {
     namespace = "com.sauceCode6.openapiapp"
     compileSdk = 34
 
+    testOptions.unitTests.isIncludeAndroidResources = true
+
     defaultConfig {
         applicationId = "com.sauceCode6.openapiapp"
         minSdk = 24
@@ -66,12 +68,13 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.androidx.junit.ktx)
     implementation(libs.androidx.paging.runtime.ktx)
+    implementation(libs.androidx.ui.test.junit4.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
+    androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.lifecycle.viewmodel.compose)
@@ -87,7 +90,6 @@ dependencies {
     kapt(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test:rules:1.5.0")
     androidTestImplementation("androidx.test:core:1.5.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
     androidTestImplementation("io.mockk:mockk-android:1.12.0")
