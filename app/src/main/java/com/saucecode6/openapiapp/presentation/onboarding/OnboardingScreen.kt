@@ -1,6 +1,5 @@
 package com.saucecode6.openapiapp.presentation.onboarding
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -26,7 +25,6 @@ import com.saucecode6.openapiapp.presentation.onboarding.components.OnboardingPa
 import com.saucecode6.openapiapp.presentation.onboarding.components.PageIndicator
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun OnboardingScreen(
     event: (OnboardingEvent) -> Unit

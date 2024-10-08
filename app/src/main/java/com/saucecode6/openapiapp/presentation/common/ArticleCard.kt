@@ -22,6 +22,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
@@ -43,9 +44,9 @@ fun ArticleCard(
 ) {
     val context = LocalContext.current
     Row(
-        modifier = modifier.clickable { onClick?.invoke() }
-            .testTag("ArticleCard")
-        ,
+        modifier = modifier
+            .clickable { onClick?.invoke() }
+            .testTag(stringResource(R.string.articlecard)),
     ) {
         AsyncImage(
             modifier = Modifier
@@ -68,7 +69,7 @@ fun ArticleCard(
                 color = colorResource(id = R.color.text_title),
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.testTag("Title Tag")
+                modifier = Modifier.testTag(stringResource(R.string.title_tag))
             )
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
@@ -79,7 +80,7 @@ fun ArticleCard(
                 Spacer(modifier = Modifier.width(ExtraSmallPadding))
                 Icon(
                     painter = painterResource(id = R.drawable.ic_time),
-                    contentDescription = "Thumbnail Icon",
+                    contentDescription = stringResource(R.string.thumbnail_icon),
                     modifier = Modifier.size(SmallIconSize),
                     tint = colorResource(id = R.color.body)
                 )
