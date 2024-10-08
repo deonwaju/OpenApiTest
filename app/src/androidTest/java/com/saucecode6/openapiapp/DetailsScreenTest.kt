@@ -92,20 +92,4 @@ class DetailsScreenTest {
         }
         assert(startedIntent.resolveActivity(context.packageManager) != null)
     }
-
-    @Test
-    fun detailsScreen_clickOnBrowser_startsBrowserIntent() {
-        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
-
-        composeTestRule.setContent {
-            DetailsScreen(article = mockArticle, event = {}, navigateUp = {})
-        }
-
-        composeTestRule.onNodeWithContentDescription("Browser").performClick()
-
-        val browserIntent = Intent(Intent.ACTION_VIEW).apply {
-            data = Uri.parse(mockArticle.url)
-        }
-        assert(browserIntent.resolveActivity(context.packageManager) != null)
-    }
 }

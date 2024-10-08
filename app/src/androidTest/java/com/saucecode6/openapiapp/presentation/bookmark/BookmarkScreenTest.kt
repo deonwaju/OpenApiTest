@@ -1,4 +1,4 @@
-package com.saucecode6.openapiapp
+package com.saucecode6.openapiapp.presentation.bookmark
 
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
@@ -7,8 +7,6 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import com.saucecode6.openapiapp.domain.model.Article
 import com.saucecode6.openapiapp.domain.model.Source
-import com.saucecode6.openapiapp.presentation.bookmark.BookmarkScreen
-import com.saucecode6.openapiapp.presentation.bookmark.BookmarkState
 import org.junit.Rule
 import org.junit.Test
 

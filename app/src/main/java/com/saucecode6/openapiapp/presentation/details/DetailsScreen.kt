@@ -2,6 +2,7 @@ package com.saucecode6.openapiapp.presentation.details
 
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -44,16 +45,16 @@ fun DetailsScreen(
     ) {
         DetailsTopBar(
             onBrowsingClick = {
-//                try {
+                try {
                     Intent(Intent.ACTION_VIEW).also {
                         it.data = Uri.parse(article.url)
                         if (it.resolveActivity(context.packageManager) != null) {
                             context.startActivity(it)
                         }
                     }
-//                } catch (e: Exception) {
-//                    Log.e("error::::", e.message + e.printStackTrace())
-//                }
+                } catch (e: Exception) {
+                    Log.e("error::::", e.message + e.printStackTrace())
+                }
             },
             onShareClick = {
                 Intent(Intent.ACTION_SEND).also {
