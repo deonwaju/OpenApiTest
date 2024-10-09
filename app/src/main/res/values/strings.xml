@@ -7,4 +7,6 @@
     <string name="search_bar">Search Bar</string>
     <string name="searchbar_tag">SearchBar Tag</string>
     <string name="empty_string" />
+    <string name="searching">searching...</string>
+    <string name="no_results_found">No results found</string>
 </resources>
